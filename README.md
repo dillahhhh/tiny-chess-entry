@@ -3,8 +3,8 @@
 A 4 KB chess engine in Python: 0x88 board, negamax with alpha-beta and
 principal-variation search, transposition table, killer moves, quiescence
 search with check evasions, material + piece-square evaluation and bishop
-pair bonus. Fixed 180,000-node budget per move, no clock and no randomness,
-so live and replay play the same moves. About 2.5-3.3 s a move, well under
+pair bonus. Fixed 200,000-node budget per move, no clock and no randomness,
+so live and replay play the same moves. About 3.1-3.7 s a move, well under
 the 10 s move limit and the 3,600 s trial wall.
 
 `main.py` is an LZMA payload (standard library only) that unpacks the

@@ -1,0 +1,20 @@
+# tiny-chess-01 entry
+
+A 4 KB chess engine in Python: 0x88 board, negamax with alpha-beta and
+principal-variation search, transposition table, killer moves, quiescence
+search with check evasions, material + piece-square evaluation and bishop
+pair bonus. Fixed 150,000-node budget per move, no clock and no randomness,
+so live and replay play the same moves.
+
+`main.py` is an LZMA payload (standard library only) that unpacks the
+engine; the readable source is in the build transcript.
+
+## Layout
+
+- `main.py` — the engine (4,018 bytes)
+- `LICENSE` — MIT
+
+## Play
+
+The engine talks to the env at `MAKEFUN_ENV_URL` (`POST /game`,
+`POST /move`) and exits when the trial is done.
